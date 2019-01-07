@@ -4,11 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is the about page of nerdwana.net as a concept for running a website on Github Pages.
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+You can find the projects used here:
+- [jekyll](https://jekyllrb.com)
+- [jekyll now](https://github.com/barryclark/jekyll-now)
+- [Github Pages](https://pages.github.com)
+- [Cloudflare](https://www.cloudflare.com)
+- [Markdown](https://www.markdownguide.org)
 
 ### Contact me
 
