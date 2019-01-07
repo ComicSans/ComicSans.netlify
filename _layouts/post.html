@@ -9,9 +9,11 @@ layout: default
   {% else %}
     {% assign categories = page.categories | join: ', ' %}
   {% endif %}
+  {% if categories != '' %}
   <div class="categories">
     Filed under <div class="category">{{ categories }}</div>
   </div>
+  {% endif %}
 
   <div class="entry">
     {{ content }}
