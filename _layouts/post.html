@@ -5,13 +5,18 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   {% if post %}
-    {% assign categories = post.categories | join: ', ' %}
+    {% assign categories = post.categories %}
   {% else %}
-    {% assign categories = page.categories | join: ', ' %}
+    {% assign categories = page.categories %}
   {% endif %}
-  {% if categories != '' %}
+
+  {% if categories != empty %}
   <div class="categories">
-    Filed under <div class="category">{{ categories }}</div>
+    Filed under
+    {% for category in categories %}
+      <div class="category">{{ category }}</div>
+    {% endfor %}
+
   </div>
   {% endif %}
 
