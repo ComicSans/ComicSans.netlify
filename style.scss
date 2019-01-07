@@ -275,14 +275,13 @@ nav {
     font-size: 80%;
     font-style: italic;
     color: $gray;
-    float: right;
 
     .category {
       display: inline-block;
       font-size: 70%;
       border: 1px solid $gray;
       border-radius: 4px;
-      padding: 2px;
+      padding: 2px 4px 2px 4px;
       vertical-align: top;
       height: 100%;
     }
