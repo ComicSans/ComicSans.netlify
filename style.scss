@@ -273,10 +273,9 @@ nav {
 
   .categories {
     font-size: 80%;
-    margin-top: -25px;
-    margin-bottom: 25px;
     font-style: italic;
     color: $gray;
+    float: right;
 
     .category {
       display: inline-block;
