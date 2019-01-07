@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the about page of nerdwana.net as a concept for running a website using Github Pages and Cloudflare.
-
+This is the about page of nerdwana.net - a concept of running a static website using Github Pages and Cloudflare.
 
 ### More Information
 
-You can find the projects used here:
+Here you can find the projects used:
 - [jekyll](https://jekyllrb.com)
 - [jekyll now](https://github.com/barryclark/jekyll-now)
 - [Github Pages](https://pages.github.com)
