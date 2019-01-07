@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is the about page of nerdwana.net as a concept for running a website on Github Pages.
+This is the about page of nerdwana.net as a concept for running a website using Github Pages and Cloudflare.
 
 
 ### More Information
