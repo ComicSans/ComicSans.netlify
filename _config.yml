@@ -21,13 +21,13 @@ footer-links:
   email: contact@nerdwana.net
   facebook:
   flickr:
-  github: https://github.com/ComicSans/ComicSans.github.io
+  github: ComicSans/ComicSans.github.io
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: https://stackoverflow.com/users/362364/comic-sans
+  stackoverflow: users/362364/comic-sans
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
