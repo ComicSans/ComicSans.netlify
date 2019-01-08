@@ -1,0 +1,103 @@
+de:
+  global:
+    description: Willkommen im nerdwana
+    tagline: Deutsch
+    about: Über
+    categories: Kategorien
+  langs:
+    en: English
+    de: Deutsch
+  date:
+    abbr_daynames:
+    - So
+    - Mo
+    - Di
+    - Mi
+    - Do
+    - Fr
+    - Sa
+    abbr_monthnames:
+    - Jan
+    - Feb
+    - Mär
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dez
+    daynames:
+    - Sonntag
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    monthnames:
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
+en:
+  global:
+    description: Welcome to nerdwana
+    about: About
+    categories: Categories
+  langs:
+    en: English
+    de: German
+  date:
+    abbr_daynames:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_monthnames:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    daynames:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    monthnames:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
