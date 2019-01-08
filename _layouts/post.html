@@ -12,7 +12,7 @@ layout: default
 
   {% if categories != empty %}
   <div class="categories">
-    Filed under
+    {% t global.filed_under %}
     {% for category in categories %}
       <div class="category">{{ category }}</div>
     {% endfor %}

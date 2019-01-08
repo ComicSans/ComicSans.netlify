@@ -20,18 +20,36 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+
+          <div class="language_switcher">
+            <b><a class="active" href="#">{{ site.languageNames[site.lang] }}</a></b>
+             {% for lang in site.languageNames %}
+             {% if lang[0] == site.lang %} {% continue %} {% endif %}
+               {% if page.namespace %}
+               <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+               {% else %}
+                  {% if lang[0] == site.language_default %}
+                    <a href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+                  {% else %}
+                    <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+                  {% endif %}
+               {% endif %}
+             {% endfor %}
+          </div>
+
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.data.i18n[page.language].global.description }}</p>
+            <p class="site-description">{% t global.description  %}</p>
           </div>
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/categories">{{ site.data.i18n[page.language].global.categories }}</a>
-            <a href="{{ site.baseurl }}/about">{{ site.data.i18n[page.language].global.about }}</a>
+            <a href="{{ site.baseurl }}/categories">{% t global.categories  %}</a>
+            <a href="{{ site.baseurl }}/about">{% t global.about  %}</a>
           </nav>
+
         </header>
       </div>
     </div>

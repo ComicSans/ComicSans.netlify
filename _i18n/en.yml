@@ -1,0 +1,48 @@
+global:
+  description: Welcome to nerdwana
+  about: About
+  categories: Categories
+  filed_under: Filed under
+date:
+  abbr_daynames:
+  - Sun
+  - Mon
+  - Tue
+  - Wed
+  - Thu
+  - Fri
+  - Sat
+  abbr_monthnames:
+  - Jan
+  - Feb
+  - Mar
+  - Apr
+  - May
+  - Jun
+  - Jul
+  - Aug
+  - Sep
+  - Oct
+  - Nov
+  - Dec
+  daynames:
+  - Sunday
+  - Monday
+  - Tuesday
+  - Wednesday
+  - Thursday
+  - Friday
+  - Saturday
+  monthnames:
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December

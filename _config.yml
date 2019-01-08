@@ -68,7 +68,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # Default: :expanded, You might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:
@@ -78,7 +78,7 @@ plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-redirect-from
-  - jekyll-multiple-languages
+  - jekyll-multiple-languages-plugin
 
 # Exclude these files from your production _site
 exclude:
@@ -97,4 +97,8 @@ excerpt_separator: <!--more-->
 
 # multilanguage configuration
 languages: ['en', 'de']
-language_default:   'en'
+exclude_from_localizations: ["javascript", "images", "css"]
+language_default: 'en'
+languageNames:
+  de: DE
+  en: EN

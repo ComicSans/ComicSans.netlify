@@ -272,7 +272,7 @@ nav {
   }
 
   .categories {
-    font-size: 80%;
+    font-size: small;
     font-style: italic;
     color: $gray;
 
@@ -299,6 +299,11 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.language_switcher {
+  float: right;
+  font-size: x-small;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
