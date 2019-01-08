@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Jekyll, Netlify and Markdown"
 categories: [blog, jekyll, markdown, netlify]
@@ -31,6 +32,8 @@ Well... Why not...
 
 ### What is Netlify?
 
-With Netlify you can connect your Github repository, define build settings like the output directory and the build command and have your deployment workflow automatically started whenever you git push. The resulting static page is available with a Netlify domain (like [this](http://comicsans.netlify.com)) or a custom domain.
+Netlify is a unified platform that automates your code to create high-performant, easily maintainable sites, and web apps. They provide continuous deployment (Git-triggered builds), an intelligent, global CDN, full DNS (including custom domains), automated HTTPS, asset acceleration, and a lot more.
+
+So you can connect your Github repository, define build settings like the output directory and the build command and have your deployment workflow automatically started whenever you git push. The resulting static page is available with a Netlify domain (like [this](http://comicsans.netlify.com)) or a custom domain.
 
 _to be continued_
