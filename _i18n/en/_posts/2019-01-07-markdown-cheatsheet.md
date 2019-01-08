@@ -21,6 +21,13 @@ Jekyll uses [Github flavored Markdown](https://help.github.com/categories/writin
 #### H4
 ~~~
 
+### Emphasis
+
+~~~markdown
+_italic_
+__bold__
+~~~
+
 ### Lists
 
 ~~~markdown
