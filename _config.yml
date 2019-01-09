@@ -102,3 +102,5 @@ language_default: 'en'
 languageNames:
   de: DE
   en: EN
+
+encoding: utf-8
