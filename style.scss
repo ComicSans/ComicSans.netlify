@@ -200,6 +200,10 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
 }
 
 .site-description {
