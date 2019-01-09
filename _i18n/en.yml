@@ -3,6 +3,7 @@ global:
   about: About
   categories: Categories
   filed_under: Filed under
+  read_more: Read more
 date:
   abbr_daynames:
   - Sun

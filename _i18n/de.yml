@@ -3,6 +3,7 @@ global:
   about: Über
   categories: Kategorien
   filed_under: Eingeordnet unter
+  read_more: Weiterlesen
 date:
   abbr_daynames:
   - So
