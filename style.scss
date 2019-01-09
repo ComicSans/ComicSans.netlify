@@ -34,8 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -48,6 +47,7 @@ h1 {
   font-size: 30px;
   a {
     color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -73,7 +73,8 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -96,11 +97,6 @@ ol ul, ul ol, ul ul, ol ol {
 
 ul ul, ol ul {
   list-style-type: circle;
-}
-
-table, td, th {
-    border: 1px solid $lightGray;
-    padding: 10px;
 }
 
 em, i {
@@ -162,7 +158,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
 
   @include mobile {
     text-align: center;
@@ -218,9 +214,9 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 40px;
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 20px;
 
   @include mobile {
     float: none;
@@ -276,22 +272,6 @@ nav {
     font-size: 15px;
   }
 
-  .categories {
-    font-size: small;
-    font-style: italic;
-    color: $gray;
-
-    .category {
-      display: inline-block;
-      font-size: 70%;
-      border: 1px solid $gray;
-      border-radius: 4px;
-      padding: 2px 4px 2px 4px;
-      vertical-align: top;
-      height: 100%;
-    }
-  }
-
 }
 
 .wrapper-footer {
@@ -308,6 +288,7 @@ footer {
 
 .language_switcher {
   float: right;
+  margin-top: 50px;
   font-size: x-small;
 }
 
@@ -315,3 +296,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "blog";

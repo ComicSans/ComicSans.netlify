@@ -9,11 +9,14 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl_root }}"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <script src="https://yui-s.yahooapis.com/combo?3.18.1/yui/yui-min.js"></script>
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ "/feed.xml" | prepend: site.baseurl_root }}" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -21,19 +24,21 @@
       <div class="container">
         <header class="masthead clearfix">
 
-          <div class="language_switcher">
-            <b><a class="active" href="#">{{ site.languageNames[site.lang] }}</a></b>
+          <div class="pure-button-group language_switcher" role="group" >
              {% for lang in site.languageNames %}
-             {% if lang[0] == site.lang %} {% continue %} {% endif %}
-               {% if page.namespace %}
-               <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
-               {% else %}
                   {% if lang[0] == site.language_default %}
-                    <a href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+                    {% if lang[0] == site.lang %}
+                      <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+                    {% else %}
+                      <a class="pure-button" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+                    {% endif %}
                   {% else %}
-                    <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+                    {% if lang[0] == site.lang %}
+                      <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+                    {% else %}
+                      <a class="pure-button" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+                    {% endif %}
                   {% endif %}
-               {% endif %}
              {% endfor %}
           </div>
 
@@ -44,15 +49,12 @@
             <p class="site-description">{% t global.description  %}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/categories">{% t global.categories  %}</a>
-            <a href="{{ site.baseurl }}/about">{% t global.about  %}</a>
-          </nav>
-
         </header>
+        {% include menu.html %}
       </div>
     </div>
+
+
 
     <div id="main" role="main" class="container">
       {{ content }}

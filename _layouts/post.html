@@ -3,30 +3,31 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-  {% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title }}</h2>
+    {% if post %}
+      {% assign categories = post.categories %}
+    {% else %}
+      {% assign categories = page.categories %}
+    {% endif %}
 
-  {% if categories != empty %}
-  <div class="categories">
-    {% t global.filed_under %}
-    {% for category in categories %}
-      <div class="category">{{ category }}</div>
-    {% endfor %}
+    {% if categories != empty %}
+      <p class="post-meta">
+        {% t global.filed_under %} &nbsp;
+        {% for category in categories %}
+          <div class="post-category post-category-pure">{{ category }}</div>
+        {% endfor %}
+      </p>
+    {% endif %}
 
-  </div>
-  {% endif %}
+    <p class="content">
+      {{ content }}
+    </p>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+    <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
+    {% include disqus.html %}
+  </header>
 </article>
