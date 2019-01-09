@@ -29,7 +29,7 @@ Well...
 | Github Pages  | No general plugin support |
 | Travis CI     | Too much work upfront and another tool |
 | CloudCannon   | It didn't work with the plugins needed ;) |
-{: .pure-table .pure-table-striped }
+{: .pure-table .pure-table-horizontal }
 
 ## What is Netlify?
 

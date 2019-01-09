@@ -12,19 +12,19 @@ layout: default
     {% endif %}
 
     {% if categories != empty %}
-      <p class="post-meta">
+      <div class="post-meta">
         {% t global.filed_under %} &nbsp;
         {% for category in categories %}
           <div class="post-category post-category-pure">{{ category }}</div>
         {% endfor %}
-      </p>
+      </div>
     {% endif %}
 
-    <p class="content">
+    <div class="content">
       {{ content }}
-    </p>
+    </div>
 
-    <div class="date">
+    <div class="post-meta date">
       Written on {{ page.date | date: "%B %e, %Y" }}
     </div>
 
