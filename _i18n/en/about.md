@@ -9,6 +9,7 @@ Here you can find related projects:
 - [Netlify](https://www.netlify.com)
 - [Cloudflare](https://www.cloudflare.com)
 - [Markdown](https://www.markdownguide.org)
+- [Pure](https://purecss.io)
 
 This website uses several jekyll plugins:
 - jekyll-sitemap

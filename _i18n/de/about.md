@@ -10,6 +10,7 @@ Relevante Projekte finden sich hier:
 - [Netlify](https://www.netlify.com)
 - [Cloudflare](https://www.cloudflare.com)
 - [Markdown](https://www.markdownguide.org)
+- [Pure](https://purecss.io)
 
 Außerdem hat diese Webseite einige jekyll-Plugins im Einsatz:
 - jekyll-sitemap
