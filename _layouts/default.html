@@ -24,24 +24,6 @@
       <div class="container">
         <header class="masthead clearfix">
 
-          <div class="pure-button-group language_switcher" role="group" >
-             {% for lang in site.languageNames %}
-                  {% if lang[0] == site.language_default %}
-                    {% if lang[0] == site.lang %}
-                      <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
-                    {% else %}
-                      <a class="pure-button" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
-                    {% endif %}
-                  {% else %}
-                    {% if lang[0] == site.lang %}
-                      <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
-                    {% else %}
-                      <a class="pure-button" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
-                    {% endif %}
-                  {% endif %}
-             {% endfor %}
-          </div>
-
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">

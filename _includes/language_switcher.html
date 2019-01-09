@@ -1,0 +1,23 @@
+<style>
+  .language_switcher {
+    font-size: x-small;
+    margin-left: 15px;
+  }
+</style>
+<div class="pure-button-group language_switcher" role="group" >
+   {% for lang in site.languageNames %}
+        {% if lang[0] == site.language_default %}
+          {% if lang[0] == site.lang %}
+            <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+          {% else %}
+            <a class="pure-button" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+          {% endif %}
+        {% else %}
+          {% if lang[0] == site.lang %}
+            <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+          {% else %}
+            <a class="pure-button" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+          {% endif %}
+        {% endif %}
+   {% endfor %}
+</div>
