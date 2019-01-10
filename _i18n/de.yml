@@ -6,6 +6,7 @@ global:
   read_more: Weiterlesen
   welcome: Willkommen
   recent_blog_posts: Kürzliche Blogeinträge
+  404-page-not-found: 404 - Page not found
 date:
   abbr_daynames:
   - So

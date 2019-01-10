@@ -6,6 +6,7 @@ global:
   read_more: Read more
   welcome: welcome
   recent_blog_posts: Recent blog posts
+  404-page-not-found: 404 - Page not found
 date:
   abbr_daynames:
   - Sun
