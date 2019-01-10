@@ -4,6 +4,8 @@ global:
   categories: Categories
   filed_under: Filed under
   read_more: Read more
+  welcome: welcome
+  recent_blog_posts: Recent blog posts
 date:
   abbr_daynames:
   - Sun

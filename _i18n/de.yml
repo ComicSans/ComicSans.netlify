@@ -4,6 +4,8 @@ global:
   categories: Kategorien
   filed_under: Eingeordnet unter
   read_more: Weiterlesen
+  welcome: Willkommen
+  recent_blog_posts: Kürzliche Blogeinträge
 date:
   abbr_daynames:
   - So

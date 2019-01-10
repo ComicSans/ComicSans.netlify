@@ -2,11 +2,10 @@
 layout: default
 ---
 
-<h1 class="content-subhead">Welcome</h1>
-This is the blog area of nerdwana.com - below you will find the most recent
-blog posts. Please have a look at the [About page]({{ site.baseurl }}{% link _pages/about.md %}) for more details on this website.
+<h1 class="content-subhead">{% t global.welcome %}</h1>
+{% tf welcome.md %}
 
-<h1 class="content-subhead">Recent blog posts</h1>
+<h1 class="content-subhead">{% t global.recent_blog_posts %}</h1>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
