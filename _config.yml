@@ -104,3 +104,8 @@ languageNames:
   en: EN
 
 encoding: utf-8
+
+picture:
+  source: "/"
+  output: "generated"
+  suppress_warnings: false

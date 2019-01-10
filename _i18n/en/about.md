@@ -19,6 +19,7 @@ This website uses several jekyll plugins:
 - jekyll-paginate
 - jekyll-redirect-from
 - jekyll-multiple-languages-plugin
+- jekyll-picture-tag
 
 ### Contact me
 

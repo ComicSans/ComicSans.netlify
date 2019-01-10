@@ -20,6 +20,7 @@ Außerdem hat diese Webseite einige jekyll-Plugins im Einsatz:
 - jekyll-paginate
 - jekyll-redirect-from
 - jekyll-multiple-languages-plugin
+- jekyll-picture-tag
 
 ### Kontakt
 
