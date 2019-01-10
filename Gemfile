@@ -8,5 +8,5 @@ group :jekyll_plugins do
    gem 'jekyll-sitemap'
    gem 'jekyll-paginate'
    gem 'jekyll-multiple-languages-plugin'
-   gem 'jekyll-picture-tag', git: 'https://github.com/robwierzbowski/jekyll-picture-tag/'
+   gem 'jekyll-picture-tag'
 end
