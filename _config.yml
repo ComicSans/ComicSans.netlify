@@ -78,6 +78,7 @@ plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-picture-tag
   - jekyll-multiple-languages-plugin
 
 # Exclude these files from your production _site
@@ -87,10 +88,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
-theme: jekyll-theme-slate
-
-safe: true
+  - .ruby-version
 
 include: ['_pages']
 excerpt_separator: <!--more-->
@@ -108,4 +106,13 @@ encoding: utf-8
 picture:
   source: "/"
   output: "generated"
-  suppress_warnings: false
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      source_medium:
+        media: "(min-width: 40em)"
+        width: "600"
+        height: "300"
+      source_default:
+        width: "300"

@@ -1,8 +1,0 @@
-# Default settings for _config.yml
-picture:
-  source: ''
-  output: generated
-  suppress_warnings: false
-
-url: ''
-baseurl: ''
