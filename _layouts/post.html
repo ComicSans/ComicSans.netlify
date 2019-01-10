@@ -19,15 +19,15 @@ layout: default
         {% endfor %}
       </div>
     {% endif %}
-
-    <div class="content">
-      {{ content }}
-    </div>
-
-    <div class="post-meta date">
-      Written on {{ page.date | date: "%B %e, %Y" }}
-    </div>
-
-    {% include disqus.html %}
   </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <div class="post-meta date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
 </article>

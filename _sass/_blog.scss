@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(61, 146, 201);
-}
-a:hover,
-a:focus {
-    text-decoration: none;
-}
-
 /* LAYOUT CSS */
 .pure-img-responsive {
     max-width: 100%;
@@ -83,7 +74,7 @@ a:focus {
 }
 
 .content {
-    padding: 2em 0em 0;
+    padding: 0em 0em 0;
 }
 
 .post {
@@ -100,9 +91,7 @@ a:focus {
     margin-left: 1em;
 }
 .post-description {
-    font-family: Georgia, "Cambria", serif;
     color: #444;
-    line-height: 1.8em;
 }
 .post-meta {
     color: #999;
@@ -156,10 +145,7 @@ a:focus {
 
 @media (min-width: 48em) {
     .content {
-        margin-top: 1em;
-        padding: 0.1em 1em;
-        border-left: 50px solid #f1f1f1;
-        background-color: #fbfbfb;
+        margin-top: 0em;
     }
 
     .header {
@@ -176,4 +162,38 @@ a:focus {
     .footer {
         text-align: center;
     }
+}
+
+.posts {
+  margin-top: 10px;
+}
+.posts > .post {
+  padding-bottom: 1em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $blue;
+  }
+
 }
