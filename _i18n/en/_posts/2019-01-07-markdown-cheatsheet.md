@@ -46,7 +46,7 @@ __bold__
 ### Images
 
 ~~~markdown
-[AltText](Link "TitleText")
+![AltText](Link "TitleText")
 ~~~
 
 ### Code
