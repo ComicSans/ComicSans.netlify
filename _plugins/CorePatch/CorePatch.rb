@@ -1,5 +1,6 @@
 module Jekyll
 
+  # Add patches to older ruby versions
   class CorePatch < Jekyll::Generator
 
     def generate(site)
@@ -11,6 +12,7 @@ end
 
 class Hash
 
+  # Older versions of Ruby may have a different implementation of transform_keys
   def transform_keys
     return enum_for(:transform_keys) { size } unless block_given?
     result = {}
