@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Jekyll, Netlify and Markdown"
-categories: [blog, jekyll, markdown, netlify]
+title: "Jekyll, Netlify and Cloudflare"
+categories: [blog, jekyll, cloudflare, netlify]
 ---
 
 This blog now moved to [Netlify](https://www.netlify.com) for hosting the static site content.
@@ -39,17 +39,40 @@ In other words: you can connect your Github repository, define build settings li
 
 ## Using Cloudflare
 
-The next step is to add Cloudflare to the stack. I have a custom domain where it set the nameservers to Cloudflare:
+[Cloudflare](https://www.cloudflare.com) speeds up and protects websites, APIs, SaaS services, and other properties connected to the Internet. They also auto minify the source code to removes unnecessary characters (like whitespace, comments, etc.) without changing its functionality and add caching.
+
+Minification can compress source file size which reduces the amount of data that needs to be transferred to visitors and thus improves page load times.
+
+### Using the correct nameservers
+
+So the next step is to add Cloudflare to the stack. I have a custom domain where it set the nameservers to the ones provided by Cloudflare:
 
 * jake.ns.coudflare.com
 * lola.ns.cloudflare.com
+
+### DNS settings
 
 In the admin panel of Cloudflare I can set the correct CNAME DNS entries for my custom netlify domain:
 
 {% picture default /images/cloudflare-dns.png alt="cloudflare dns" %}
 
-In the security tab we can set a SSL certificate:
+A Canonical Name record (abbreviated as CNAME record) is a type of resource record which maps one domain name to another, referred to as the Canonical Name. CNAME records must always point to another domain name, never directly to an IP address.
+
+In the security tab we can set an SSL certificate by chosing "SSL Full":
 
 {% picture default /images/cloudflare-ssl.png alt="cloudflare ssl" %}
+
+### What SSL setting should I use?
+
+That setting controls how Cloudflare’s servers connect to our netlify domain (the origin) for HTTPS requests. Possible options are:
+
+- **Flexible SSL**: You cannot configure HTTPS support on your origin, even with a certificate that is not valid for your site. Visitors will be able to access your site over HTTPS, but connections to your origin will be made over HTTP.
+- **Full SSL**: Your origin supports HTTPS, but the certificate installed does not match your domain or is self-signed. Cloudflare will connect to your origin over HTTPS, but will not validate the certificate.
+- **Full (strict)**: Your origin has a valid certificate (not expired and signed by a trusted CA or Cloudflare Origin CA) installed. Cloudflare will connect over HTTPS and verify the cert on each request.
+
+Picking an incorrect setting (as "Full (strict)") results in your website not being available to visitors:
+
+{% picture default /images/cloudflare-dns-error.png alt="cloudflare dns error" %}
+
 
 _to be continued..._
