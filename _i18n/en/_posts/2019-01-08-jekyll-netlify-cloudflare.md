@@ -37,6 +37,13 @@ Netlify is a unified platform that *automates your code to create high-performan
 
 In other words: you can connect your Github repository, define build settings like the output directory and the build command and have your deployment workflow automatically started whenever you `git push`. The resulting static page is available with a Netlify domain (like [this](http://comicsans.netlify.com)) or a custom domain.
 
+### Connect netlify to github
+
+The first step is to hook up netlify with your Github repo. They have a nice tutorial over [here](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/). The relevant build settings are:
+
+{% picture default /images/netlify-build-settings.png alt="netlify build settings" %}
+
+
 ## Using Cloudflare
 
 [Cloudflare](https://www.cloudflare.com) speeds up and protects websites, APIs, SaaS services, and other properties connected to the Internet. They also auto minify the source code to removes unnecessary characters (like whitespace, comments, etc.) without changing its functionality and add caching.
