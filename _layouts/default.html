@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <script src="https://yui-s.yahooapis.com/combo?3.18.1/yui/yui-min.js"></script>
+    <script src="{{ "/assets/js/common.js" | prepend: site.baseurl_root }}"></script>
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
@@ -42,8 +43,6 @@
         {% include menu.html %}
       </div>
     </div>
-
-
 
     <div id="main" role="main" class="container">
       {{ content }}

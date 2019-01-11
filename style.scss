@@ -252,6 +252,15 @@ footer {
   width: 670px;
   padding: 25px;
 }
+
+.language_switcher {
+  font-size: x-small;
+  display: block;
+  float: right;
+  margin-right: 55px;
+  margin-top: 5px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
