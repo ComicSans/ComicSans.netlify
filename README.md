@@ -1,6 +1,6 @@
 # Jekyll & Jekyll Now
 
-**Jekyll** is a static site generator ([Jekyll Repository](https://github.com/jekyll/jekyll)). **Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup and can be found ([here](https://github.com/barryclark/jekyll-now)).
+**Jekyll** is a static site generator ([Jekyll Repository](https://github.com/jekyll/jekyll)). **Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup and can be found [here](https://github.com/barryclark/jekyll-now). Although it seems no longer under active development it is a good place to start.
 
 # Netlify
 
