@@ -43,6 +43,9 @@ The first step is to hook up netlify with your Github repo. They have a nice tut
 
 {% picture default /images/netlify-build-settings.png alt="netlify build settings" %}
 
+Also add your own domains here:
+
+{% picture default /images/netlify-domain-settings.png alt="netlify domain settings" %}
 
 ## Using Cloudflare
 
@@ -80,6 +83,3 @@ That setting controls how Cloudflare’s servers connect to our netlify domain (
 Picking an incorrect setting (as "Full (strict)") results in your website not being available to visitors:
 
 {% picture default /images/cloudflare-dns-error.png alt="cloudflare dns error" %}
-
-
-_to be continued..._
