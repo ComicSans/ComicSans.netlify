@@ -25,10 +25,10 @@ markup_presets:
 
   small:
     formats: [webp, original]
-    widths: [200]
+    widths: [100, 200]
     size: 200px
     attributes:
-      img: class="small-image"
+      img: class="centered small-image"
 
   icon:
     base-width: 20
