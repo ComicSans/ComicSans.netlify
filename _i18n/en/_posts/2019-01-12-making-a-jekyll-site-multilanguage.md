@@ -47,7 +47,7 @@ Blog posts go to _\_i18n/en/\_posts_ for English entries and _\_i18n/de/\_posts_
 
 We keep the original _\_pages_ folder. The previous _\_posts_ folder is moved permanently to _\_i18n_.
 
-## The language switcher on the site
+## The language switcher
 
 I use [Pure](https://purecss.io) for styling, so don't care about the `pure.button-group` classes in the code.
 
@@ -86,7 +86,7 @@ In my default layout I set the HTML tag like this:
 ```
 {% endraw %}
 
-I also changed the header and tagline:
+I also changed the site's tagline like this:
 
 {% raw %}
 ```html
@@ -102,10 +102,10 @@ And here you can see the translation for the first time.
 
 But where does the translation come from?
 
-That's were the yaml files in _\_i18n_ were used:
+That's were the yaml files in _\_i18n_ are used:
 
 ```yaml
-#_i18n/en.yml
+#_i18n/en.yml - english
 global:
   description: Welcome to nerdwana
   about: About
@@ -119,7 +119,7 @@ global:
 The corresponding file for the German translation looks like this:
 
 ```yaml
-#_i18n/de.yml
+#_i18n/de.yml - german
 global:
   description: Willkommen im nerdwana
   about: Über
@@ -131,7 +131,7 @@ global:
   404-page-not-found: 404 - Page not found
 ```
 
-`global.description` is used for the tagline. The remaining entries are used in the navigation or in the post layout:
+The string `global.description` is used for the tagline above. The remaining entries are used in the navigation or in the post layout (you can see examples later in the blog post):
 
 {% raw %}
 ```html
@@ -164,7 +164,7 @@ Use _baseurl_root_ for CSS files:
 
 ### Posts
 
-Posts go to the `\_posts` subfolder. The rest should work out of the box. A visitor will only see posts in the selected language, if you use `site.posts`:
+Posts go to the `_posts` subfolder. The rest should work out of the box. A visitor will only see posts in the selected language, if you use `site.posts`:
 
 {% raw %}
 ```html
@@ -187,7 +187,7 @@ Posts go to the `\_posts` subfolder. The rest should work out of the box. A visi
 
 What about pages? They are a bit more complicated as you don't want to link them for every language separately. We don't use the `t` or `translate` method here but `tf` to translate whole files.
 
-First create a page stub in the `\_pages` folder outside of `\_i8n` like this:
+First create a page stub in the `_pages` folder outside of `_i8n` like this:
 
 {% raw %}
 ```yml
@@ -201,13 +201,13 @@ permalink: /about/
 ```
 {% endraw %}
 
-This will look for a file `about.md` in the language specific `\_i18n` subfolder.
+This will look for a file `about.md` in the language specific `_i18n` subfolder.
 
-Next add the corresponding translation to either `\_i18n/en` or `\_i18n/de`:
+Next add the corresponding translation to either `_i18n/en` or `_i18n/de`:
 
 {% raw %}
 ```markdown
-#_i18n/en/about.md
+#_i18n/en/about.md - the english version of this file
 This is the About page.
 ```
 {% endraw %}
