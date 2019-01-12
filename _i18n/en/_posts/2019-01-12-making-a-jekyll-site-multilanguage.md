@@ -41,7 +41,7 @@ I also added two languages, English and German. The default language of the webs
 
 Next, you have to create the correct folder. All translated posts will be put into the _\_i18n_ subfolder:
 
-{% picture small /images/i18n-folder-structure.png alt="jekyll folder structure" %}
+{% picture small /images/jekyll-i18n-folder-structure.png alt="jekyll folder structure" %}
 
 Blog posts go to _\_i18n/en/\_posts_ for English entries and _\_i18n/de/\_posts_. The static pages end up in _\_i18n/en_ or _\_i18n/de_ directly.
 
