@@ -40,6 +40,8 @@ M503 // list information of the printer settings
 
 You'll find a line like _Steps per unit: M92 X100.00 Y100.00 Z400.00 E95_ at the beginning of the text. If you receive an error message you will have to recompile Marlin with M503 support enabled (you find this setting in _configuration.h_ as ```//#define DISABLE_M503```).
 
+The last part beginning with _E_ are the current e steps. You will need them for the next steps.
+
 Now the math starts. You have an expected value and a current value that was extruded. You will need the difference.
 
 Calculate
