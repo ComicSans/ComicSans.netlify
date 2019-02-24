@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 gem 'public_suffix', '2.0.5'
 gem 'wdm', '>=0.1.0' if Gem.win_platform?
+gem 'executable-hooks'
 
 group :jekyll_plugins do
    gem 'jekyll'
