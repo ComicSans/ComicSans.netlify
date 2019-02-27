@@ -30,6 +30,13 @@ markup_presets:
     attributes:
       img: class="centered small-image"
 
+  medium:
+    formats: [webp, original]
+    widths: [100, 200, 400]
+    size: 400px
+    attributes:
+      img: class="centered medium-image"
+
   icon:
     base-width: 20
     pixel_ratios: [1, 1.5, 2]
