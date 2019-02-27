@@ -4,7 +4,7 @@ title: "Unsere erste Angular-Anwendung"
 categories: [angular]
 ---
 
-Im [letzten Beispiel]({% post_url 2019-02-23-angular-8-unter-windows-installieren %}) haben wir alle Vorbereitungen getroffen, um Angular zu benutzen. Jetzt wollen wir die erste App schreiben.
+Im [letzten Beispiel](/de{% post_url 2019-02-23-angular-8-unter-windows-installieren %}) haben wir alle Vorbereitungen getroffen, um Angular zu benutzen. Jetzt wollen wir die erste App schreiben.
 
 <!--more-->
 
@@ -60,9 +60,9 @@ Dazu brauchen wir einen Editor. Einen Blick wert sind auf jeden Fall [Visual Stu
 
 Erste Anlaufstelle ist _./src/app/app.component.ts_:
 
-{% picture default /images/angular-app-first-component.png alt="die erste component" %}
+{% picture medium /images/angular-app-first-component.png alt="die erste component" %}
 
-Hier sehen wir eine TypeScript-Klasse für die Hauptkomponente unserer App und einen @Component-Decorator, der Angular noch ein paar Details mitgibt, was unsere Klasse braucht. Ein Template bzw. eine View zum Beispiel und ein paar Styles. Wichtig ist außerdem der Selector, den schauen wir uns an anderer Stelle einmal an.
+Hier sehen wir eine TypeScript-Klasse für die Hauptkomponente unserer App und einen Component-Decorator, der Angular noch ein paar Details mitgibt, was unsere Klasse braucht. Ein Template bzw. eine View zum Beispiel und ein paar Styles. Wichtig ist außerdem der Selector, den schauen wir uns an anderer Stelle einmal an.
 
 ## Was haben wir gelernt?
 
