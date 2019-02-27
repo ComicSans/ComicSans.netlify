@@ -9,7 +9,7 @@ markup_presets:
   default:
     markup: auto
     formats: [webp, original]
-    widths: [200, 400, 720, 1200, 1600]
+    widths: [200, 400, 720, 1200]
     media_widths:
       mobile: [200, 400, 720]
       tablet: [400, 720, 1200]

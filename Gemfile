@@ -5,12 +5,10 @@ gem 'executable-hooks'
 
 group :jekyll_plugins do
    gem 'jekyll'
-   gem 'jekyll-sitemap'
    gem 'jekyll-paginate'
    gem 'jekyll-picture-tag', git: 'https://github.com/robwierzbowski/jekyll-picture-tag/'
    gem 'jekyll-multiple-languages-plugin'
    gem 'jekyll-theme-slate'
-   gem 'jekyll-feed'
    gem 'jekyll-mentions'
    gem 'jemoji'
    gem 'jekyll-redirect-from'
