@@ -40,7 +40,7 @@ Ein paar Worte zur Farbgebung im Screenshot: es gibt dunkelgraue Einträge, wei�
 
 Schauen wir mal in besagte Datei rein, die ``app.module.ts``:
 
-```
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -71,7 +71,7 @@ Die eigentlichen Bestandteile der Komponente liegen im Ordner src\app\blog-entry
 
 Aufmerksame Beobachter merken: uns fehlt noch ein Model für das M in MVC. Das erstellen wir per Hand und mit dem Editor in src\app\blog-entry, nennen es ``blog-entry.ts`` und füllen es mit folgendem, beeindruckenden Inhalt:
 
-```
+```typescript
 export class BlogEntry {
   title: string;
   text: string;
@@ -87,7 +87,7 @@ Die Model-Datei müssen wir an den relevanten Stellen importieren, damit wir sie
 
 Die Dateien sehen dann aus wie folgt:
 
-```
+```typescript
 // app.component.ts
 import { Component } from '@angular/core';
 import {BlogEntry} from './blog-entry/blog-entry';
@@ -116,7 +116,7 @@ Ich habe gleich eine ``createBlogEntry``-Methode eingefügt, die brauchen wir sp
 
 Und bei der Komponente schaut es aus wie folgt:
 
-```
+```typescript
 // blog-entry.component.ts
 import { Component, Input } from '@angular/core';
 import {BlogEntry} from './blog-entry';
@@ -141,7 +141,7 @@ Diese Anzeige stammt aus der Datei ``src\app\app.component.html``, die uns freun
 
 Ersetzen wir den Inhalt doch einmal mit:
 
-```
+```html
 <h1>Mein Blog</h1>
 
 <app-blog-entry *ngFor="let entry of entries" [entry]="entry">
@@ -152,7 +152,7 @@ Nach einem Reload der Seite schaut es nicht viel besser aus. Das rote Logo macht
 
 Schauen wir uns den Block mit ``app-blog-entry`` an. Das ist unsere Komponente! Folgender Eintrag macht das möglich:
 
-```
+```typescript
 // blog-entry.component.ts
 // ...
 @Component({
@@ -169,7 +169,7 @@ Aber das lässt sich ändern, geben wir der App-Komponente doch einen Konstrukto
 
 Damit sieht er so aus:
 
-```
+```typescript
 // app.component.ts
 import { Component } from '@angular/core';
 import {BlogEntry} from './blog-entry/blog-entry';
@@ -206,13 +206,15 @@ Naja, immer noch Raum für Verbesserung. Aber immerhin wissen wir, dass das Blog
 
 Woher kommt die Anzeige? Aus der View der Komponente natürlich. Schauen wir mal in src\app\blog-entry\blog-entry.component.html und wir haben den Schuldigen. Schreiben wir mal das hier rein:
 
-```
-// src\app\blog-entry.component.html
+{% raw %}
+```html
+<!-- src\app\blog-entry.component.html -->
 <div class="blog-entry">
   <h2>{{entry.title}}</h2>
   <p>{{entry.text}}</p>
 </div>
 ```
+{% endraw %}
 
 Reload... und? Gar nicht mal so schlecht.
 
