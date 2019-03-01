@@ -80,7 +80,8 @@ plugins:
   - jekyll-picture-tag
   - jekyll-multiple-languages-plugin
   - jekyll-tidy
-
+  - jekyll-sitemap
+  
 # Exclude these files from your production _site
 exclude:
   - Gemfile
