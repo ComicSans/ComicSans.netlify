@@ -22,13 +22,13 @@ footer-links:
   email: contact@nerdwana.net
   facebook:
   flickr:
-  github: ComicSans/ComicSans.github.io
+  github: ComicSans/ComicSans.netlify
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: users/362364/comic-sans
+  stackoverflow: users/362364/comic-sans?tab=profile
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -81,7 +81,7 @@ plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-tidy
   - jekyll-sitemap
-  
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
