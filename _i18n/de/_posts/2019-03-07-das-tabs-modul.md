@@ -4,7 +4,7 @@ title: "Das Tabs-Modul für Angular"
 categories: [angular]
 ---
 
-Wir haben unseren ersten Schritte in der Angular-Welt bereits zurückgelegt (sie [unser Blog](/de{% post_url 2019-02-26-eine-erste-blog-anwendung %})).
+Wir haben unseren ersten Schritte in der Angular-Welt bereits zurückgelegt (siehe [unser Blog](/de{% post_url 2019-02-26-eine-erste-blog-anwendung %})).
 
 Damit sind wir bereit für Module und Komponenten mit etwas mehr Komplexität: das Tabs-Modul.
 
@@ -14,7 +14,7 @@ Den Quellcode zu diesem Beispiel findet Ihr [hier](https://github.com/ComicSans/
 
 <!--more-->
 
-Wir brauchen einen neuen Workspace und erstellen darin zwei Komponenten (_tabs_ und _tabs-demo_), sowie ein Modul. Über das Warum reden wir gleich. Los geht's:
+Wir brauchen einen neuen Workspace und erstellen darin zwei Komponenten (_tabs_ und _tabs-demo_) und ein Modul. Über das Warum reden wir gleich. Los geht's:
 
 ```bash
 ng new AngularDemo
@@ -28,7 +28,7 @@ Das ergibt folgende Verzeichnisstruktur:
 
 {% picture medium /images/angular-tabs-module-1.png alt="Grundstruktur der Anwendung" %}
 
-Mit ``ng serve --open`` können wir uns die App im Browser anzeigen lassen. Bei jedem Speichern einer Quellcode-Datei wird die Seite automatisch aktualisiert.
+Mit ``ng serve --open`` können wir uns die App im Browser anzeigen lassen. Bei jedem Speichern einer Quellcode-Datei wird die Seite nun automatisch aktualisiert.
 
 ## Die Komponenten
 
@@ -47,7 +47,7 @@ Entsprechend ersetzen wir den  Inhalt der _src\app\app.component.html_ wie folgt
 ```
 {% endraw %}
 
-Das zeigt uns also den Inhalt der Tabs-Demo-Komponente an, sobald wir auf die Startseite unserer Anwendung gehen.
+Das zeigt uns den Inhalt der Tabs-Demo-Komponente an, sobald wir auf die Startseite unserer Anwendung gehen.
 
 Spannend ist sonst nur noch das Template unter _src\app\tabs-demo\tabs-demo.component.html_:
 
@@ -55,10 +55,10 @@ Spannend ist sonst nur noch das Template unter _src\app\tabs-demo\tabs-demo.comp
 ```html
 <angular-tabs>
   <angular-tab title="First Tab">
-    This ist the first tab!
+    This is the first tab!
   </angular-tab>
   <angular-tab title="Second Tab">
-    This ist the second tab!
+    This is the second tab!
   </angular-tab>
 </angular-tabs>
 ```
@@ -113,13 +113,13 @@ export class TabsComponent implements AfterContentInit {
 ```
 {% endraw %}
 
-Gehen wir der Reihe nach durch, die Imports zuerst.
+Gehen wir das einmal der Reihe nach durch, die Imports zuerst.
 
 Wir importieren ``Component, ContentChildren, Input, QueryList, AfterContentInit`` - im Detail:
 
 - ``Component`` weil wir eine Komponenten sind.
 - ``ContentChildren`` weil wir das HTML durchsuchen müssen, um alle Tabs zu finden (ContentChildren sind quasi alle Tags innerhalb unserer View).
-- ``Input`` ist das Input-Binding. Was soviel heißt, dass wir "von außen" Werte an unsere Komponente mitgeben. Das sehen wir in der TabsDemo: dort wird das _title_-Attribut gesetzt. Ohne _Input_ hätten wir auf diesen Wert keinen Zugriff.
+- ``Input`` ist das Input-Binding. Was soviel heißt, dass wir "von außen" Werte an unsere Komponente mitgeben können. Das sehen wir in der TabsDemo: dort wird das _title_-Attribut gesetzt. Ohne _Input_ hätten wir auf diesen Wert keinen Zugriff.
 - ``QueryList`` hängt mit den ContentChildren zusammen.
 - ``AfterContentInit`` liefert uns das Event ``ngAfterContentInit()``, welches gefeuert wird, nachdem der Content geladen wurde. Das gehört zum Component-LifeCycle - und den schauen wir uns irgendwann später an. Wichtig ist jedenfalls, dass wir nun mitbekommen, wenn die Komponente geladen wurde. Wir setzen dann den ersten Tab auf "aktiv". Außerdem implementieren wir das ``AfterContentInit``-Interface. Schadet ja nix.
 
@@ -150,7 +150,7 @@ Es gibt insgesamt drei Angular-Dinge, die in den Views auffallen:
 
 ``*ngIf`` zeigt den Tag nur an, wenn eine Bedingung erfüllt ist. Diese ist bei uns im Beispiel die Eigenschaft _active_ des Tabs. Ist das ``false``, dann soll der Inhalt des Tabs nicht angezeigt werden.
 
-Den Inhalt selbst erhalten wir von ``ng-content``. Das ist das, was innerhalb des Selektors unserer Komponenten steht - bei uns lohnt sich jetzt der Block in _src\app\tabs-demo\tabs-demo.component.html_.
+Den Inhalt selbst erhalten wir von ``ng-content``. Das ist das, was innerhalb des Selektors unserer Komponenten steht - das steht in der _src\app\tabs-demo\tabs-demo.component.html_.
 
 ``*ngFor`` durchläuft ein Array und klont den eigenen Tag bei jeder Iteration. Hat das Array _tabs_ also zwei Einträge, so werden zwei ``li``-Tags erzeugt. Das OnClick-Event eines jeden wird mit der ``activate(tab)``-Methode verknüpft. Die gibt es noch nicht, aber das lässt sich ändern:
 
