@@ -3,7 +3,6 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem 'public_suffix', '2.0.5'
   gem 'wdm', '>=0.1.0' if Gem.win_platform?
-  gem 'executable-hooks', '~> 1.6'
   gem 'jekyll'
   gem 'jekyll-paginate'
   gem 'jekyll-picture-tag', git: 'https://github.com/robwierzbowski/jekyll-picture-tag/'
