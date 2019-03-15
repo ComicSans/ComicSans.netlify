@@ -5,7 +5,7 @@ categories: [angular]
 lang: de_DE
 ---
 
-[Hier](/de{% post_url 2019-03-07-das-tabs-modul %}) haben wir unser erstes etas umfangreicheres Modul geschrieben. Jetzt schauen wir uns Direktiven an.
+[Hier](/de{% post_url 2019-03-07-das-tabs-modul %}) haben wir unser erstes etwas umfangreicheres Modul geschrieben. Jetzt schauen wir uns Direktiven an.
 
 Direktiven sind Module ohne Template. Oder anders ausgedrückt: Module fügen unserer Anwendung Funktionalität hinzu. Und Angular bringt von Haus aus einige Direktiven mit. Wir sehen uns ein paar davon an.
 
