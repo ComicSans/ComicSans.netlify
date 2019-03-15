@@ -2,15 +2,15 @@
    {% for lang in site.languageNames %}
         {% if lang[0] == site.language_default %}
           {% if lang[0] == site.lang %}
-            <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+            <a rel="canonical" class="pure-button pure-button-active" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
           {% else %}
-            <a class="pure-button" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+            <a rel="canonical" class="pure-button" href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
           {% endif %}
         {% else %}
           {% if lang[0] == site.lang %}
-            <a class="pure-button pure-button-active" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+            <a rel="canonical" class="pure-button pure-button-active" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
           {% else %}
-            <a class="pure-button" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+            <a rel="canonical" class="pure-button" href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
           {% endif %}
         {% endif %}
    {% endfor %}

@@ -45,6 +45,8 @@ google_analytics: # UA-28060151-1
 url: https://nerdwana.com
 email: contact@nerdwana.net
 
+author: Tobias Reithmeier
+
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
@@ -81,6 +83,7 @@ plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-tidy
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:

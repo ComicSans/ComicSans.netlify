@@ -2,6 +2,7 @@
 layout: post
 title: "Unsere erste ernsthafte Angular-Anwendung"
 categories: [angular]
+lang: de_DE
 ---
 
 Im [ersten Beispiel](/de{% post_url 2019-02-23-angular-8-unter-windows-installieren %}) haben wir alle Vorbereitungen getroffen, um Angular zu benutzen.

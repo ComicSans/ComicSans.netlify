@@ -2,6 +2,7 @@
 layout: post
 title: "Das Tabs-Modul für Angular"
 categories: [angular]
+lang: de_DE
 ---
 
 Wir haben unseren ersten Schritte in der Angular-Welt bereits zurückgelegt (siehe [unser Blog](/de{% post_url 2019-02-26-eine-erste-blog-anwendung %})).

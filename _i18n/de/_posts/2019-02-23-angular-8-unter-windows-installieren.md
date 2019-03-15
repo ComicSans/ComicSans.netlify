@@ -2,6 +2,7 @@
 layout: post
 title: "Angular 7 unter Windows installieren"
 categories: [angular]
+lang: de_DE
 ---
 
 Angular ist ein JavaScript-Framework, mit dessen Hilfe schnell moderne Webanwendungen erstellt werden können. Zusammen mit [Vue.js](https://vuejs.org) und [React.js](https://reactjs.org) ist es eines der aktuell beliebtesten Frameworks.

@@ -1,0 +1,8 @@
+---
+layout: null
+permalink: /robots.txt
+---
+
+User-agent: *
+Sitemap: https://nerdwana.net/sitemap.xml
+Sitemap: https://nerdwana.net/de/sitemap.xml
