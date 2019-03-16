@@ -4,6 +4,7 @@ _drafts
 .jekyll
 .jekyll-metadata
 .bundle
+.netlify
 .sass-cache
 node_modules
 package.json
