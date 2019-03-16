@@ -220,3 +220,5 @@ export class AppModule { }
 ```
 
 Die ganzen fehlenden Details (CSS zum Beispiel) findet ihr auf [GitHub](https://github.com/ComicSans/Angular-Playground).
+
+Weiter geht es [hier](/de{% post_url 2019-03-15-standard-direktiven %}).

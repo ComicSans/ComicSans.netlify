@@ -51,3 +51,5 @@ npm install -g @angular/cli
 - Chocolatey ist ein nettes Tool
 - Node.js ist schnell installiert
 - Angular kommt als Node-Modul
+
+Weiter geht es [hier](/de{% post_url 2019-02-23-die-erste-angular-app %}).

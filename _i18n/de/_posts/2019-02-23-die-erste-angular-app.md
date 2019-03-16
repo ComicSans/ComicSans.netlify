@@ -72,3 +72,5 @@ Hier sehen wir eine TypeScript-Klasse für die Hauptkomponente unserer App und e
 - ``ng serve`` baut die Webseite
 - Angular-Anwendungen sind in Komponenten aufgeteilt
 - TypeScript ist die Sprache der Wahl für moderne Angular-Anwendungen
+
+Weiter geht es [hier](/de{% post_url 2019-02-26-eine-erste-blog-anwendung %}).

@@ -122,3 +122,5 @@ Und zuletzt:
 </ul>
 ```
 {% endraw %}
+
+Weiter geht es [hier](/de{% post_url 2019-03-16-angular-pipes %}).

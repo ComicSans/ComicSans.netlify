@@ -225,3 +225,6 @@ Reload... und? Gar nicht mal so schlecht.
 - die ng-Cli hilft uns bei der Anlage einer Komponente
 - Selectoren bestimmen das HTML-Element, in dem eine Komponente angezeigt wird
 - NgFor iteriert über Array-Elementen
+
+
+Weiter geht es [hier](/de{% post_url 2019-03-07-das-tabs-modul %}).
