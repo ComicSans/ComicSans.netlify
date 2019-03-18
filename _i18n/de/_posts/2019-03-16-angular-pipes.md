@@ -73,3 +73,5 @@ export class CustomPipe implements PipeTransform {
 ```
 
 Danach muss diese noch im Hauptmodul registriert werden und steht von da an allen Komponenten zur Verfügung. Kompliziert wird es, sobald die Pipe Arrays oder Objekte bearbeiten soll, aber Details überlasse ich der offiziellen Doku: [https://angular.io/guide/pipes#pure-and-impure-pipes](https://angular.io/guide/pipes#pure-and-impure-pipes).
+
+Weiter geht es [hier](/de{% post_url 2019-03-17-services %}).
