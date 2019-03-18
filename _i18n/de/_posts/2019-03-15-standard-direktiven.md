@@ -96,7 +96,7 @@ Es gibt noch ein paar nette Erweiterungen:
 {% raw %}
 ```html
 <ul>
-  <li *ngFor="let entry of entries; let n = index"> Entry {{ n+1}}: {{ entry }}</li>
+  <li *ngFor="let entry of entries; let n = index"> Entry {{ n+1 }}: {{ entry }}</li>
 </ul>
 ```
 {% endraw %}
