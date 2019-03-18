@@ -31,7 +31,9 @@ Wir fangen mit der Anzeige an, wo wir doch gerade auf der Kommandozeile unterweg
 ng generate component blog-entry
 ```
 
-Das erzeugt uns eine sogenannte Komponente. Den Begriff kennen wir schon aus den Annotationen vom letzten Beispiel, aber diesmal schreiben wir  selbst eine. Eine Komponente bündelt zusammengehörigen Code. Wir wollen in der blog-entry-Komponente alles unterbringen, was wir zur Anzeige eines Blogeintrags brauchen.
+Das erzeugt uns eine sogenannte Komponente. Den Begriff kennen wir schon aus den Annotationen vom letzten Beispiel, aber diesmal schreiben wir selbst eine. Eine Komponente bündelt zusammengehörigen Code. Wir wollen in der blog-entry-Komponente alles unterbringen, was wir zur Anzeige eines Blogeintrags brauchen.
+
+Komponenten hängen immer mit einer View zusammen und verbinden Anwendungslogik, Services und View. Das unterscheidet sie von Modulen, denn bei Modulen handelt es sich um eine Sammlung von Komponenten. Module regeln, welche Komponenten miteinander sprechen können, steuern Dependency Injection und sorgen überhaupt dafür, dass die Anwendung modular aufgebaut werden kann.
 
 Obiger Befehl hat uns ein paar Dateien erzeugt und unser Projekt schaut jetzt so aus:
 
