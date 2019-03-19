@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zusammenfassung der Angular Building Blocks"
-categories: [angular]
+categories: [Angular, Architektur]
 lang: de_DE
 ---
 
@@ -23,3 +23,5 @@ Weitere Annotationen neben ``@NgModule`` sind ``@Component`` oder auch ``@Pipe``
 Jetzt ist übrigens ein guter Moment, um einen Blick auf [die Architektur von Angular](https://angular.io/guide/architecture) zu werfen.
 
 Die nächsten Themen sind dann Routing, HTTP-Services, RxJS und Tests.
+
+Weiter geht es [hier](/de{% post_url 2019-03-19-forms-in-angular %}).
