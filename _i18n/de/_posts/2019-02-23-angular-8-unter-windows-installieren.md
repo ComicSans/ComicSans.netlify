@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular 7 unter Windows installieren"
-categories: [angular]
+categories: [Angular]
 lang: de_DE
 ---
 

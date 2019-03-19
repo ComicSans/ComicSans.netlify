@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular Pipes"
-categories: [angular]
+categories: [Angular, Pipes]
 lang: de_DE
 ---
 

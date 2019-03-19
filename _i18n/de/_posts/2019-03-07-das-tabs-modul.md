@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Das Tabs-Modul für Angular"
-categories: [angular]
+categories: [Angular]
 lang: de_DE
 ---
 

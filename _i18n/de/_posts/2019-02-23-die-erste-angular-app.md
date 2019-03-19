@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unsere erste Angular-Anwendung"
-categories: [angular]
+categories: [Angular]
 lang: de_DE
 ---
 

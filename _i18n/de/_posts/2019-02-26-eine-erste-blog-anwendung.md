@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unsere erste ernsthafte Angular-Anwendung"
-categories: [angular]
+categories: [Angular]
 lang: de_DE
 ---
 
@@ -122,7 +122,7 @@ Und bei der Komponente schaut es aus wie folgt:
 ```typescript
 // blog-entry.component.ts
 import { Component, Input } from '@angular/core';
-import {BlogEntry} from './blog-entry';
+import { BlogEntry } from './blog-entry';
 
 @Component({
   selector: 'app-blog-entry',
@@ -175,7 +175,7 @@ Damit sieht er so aus:
 ```typescript
 // app.component.ts
 import { Component } from '@angular/core';
-import {BlogEntry} from './blog-entry/blog-entry';
+import { BlogEntry } from './blog-entry/blog-entry';
 
 @Component({
   selector: 'app-root',

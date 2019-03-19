@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular Standarddirektiven"
-categories: [angular]
+categories: [Angular, Direktiven]
 lang: de_DE
 ---
 
