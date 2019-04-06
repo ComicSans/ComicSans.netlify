@@ -99,3 +99,5 @@ Erwähnenswert sind hier folgende Dinge:
 - ``#form="ngForm"`` bindet unsere #form-Variable an das dem Formular inherente Forms-Objekt. Das gibt es, weil wir das FormsModule importiert haben - alle Formulare der Anwendung sind nun automatisch ngForms-Formulare.
 - ``[disabled]="!form.valid"`` nutzt diese Variable und setzt entsprechend das Disabled-Attribut des Submit-Buttons. Das Formular ist valide, wenn alle Validatoren erfüllt sind. Ein validator ist z.B. das ``required`` an den Inputs. Oder ``minlength="3"``. Über ``form.hasError()`` kann man auf verletzte Validierungsregeln prüfen.
 - Ebenfalls an den Input sehen wir ``ngModel`` - das ist das Schlüsselwort, um ein Element dem Forms-Model zuzuweisen. Wir haben also in jedem Formular ein zugrunde liegendes ``ngForm``. Jedes mit ``ngModel`` ausgezeichnete Input wird diesem nun als weitere Eigenschaft hinzugefügt. Hierbei liefert der ``name``-Tag den Namen der Eigenschaft.
+
+Weiter geht es [hier](/de{% post_url 2019-04-02-rxjs %}).
