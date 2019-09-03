@@ -8,7 +8,7 @@ In the last article I used the WSL (Windows Subsystem for Linux) to download GOG
 
 But how can we interact between Windows and Linux?
 
-<!-- more -->
+<!--more-->
 
 ## How to call a linux command from within windows
 
