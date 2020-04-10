@@ -22,13 +22,13 @@ Basically you need to know how much the desired value for extruded filament diff
 
 You need a way to send commands to your printer, so either connect it via USB or use OctoPrint or similar.
 
-You can extrude 10mm filament with this code:
+You can extrude 10cm filament with this code:
 
 ```
 G1 E100 F100
 ```
 
-If your printer extrudes exactly 10mm you are fine and can skip the rest of the tutorial here.
+If your printer extrudes exactly 10cm you are fine and can skip the rest of the tutorial here.
 
 ## The correct values
 
